@@ -5,14 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BiographyComponent } from './biography/biography.component';
 import { Routes } from '@angular/router';
+import { ResumeComponent } from './resume/resume.component';
 const routes: Routes = [
-  {path: '', component: BiographyComponent}
+  {path: '', component: BiographyComponent},
+  {path: 'resume', component:ResumeComponent}
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    BiographyComponent
+    BiographyComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,
